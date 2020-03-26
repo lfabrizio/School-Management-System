@@ -8,16 +8,31 @@ public class Student {
     private int feesTotal;
 
     /**
-     *
-     * @param id student id : unique
-     * @param name student name
+     * @param id    student id : unique
+     * @param name  student name
      * @param grade students grade
      */
-    public Student(int id, String name, int grade){
+    public Student(int id, String name, int grade) {
         this.feesPaid = 0;
         this.feesTotal = 30000;
         this.id = id;
         this.name = name;
         this.grade = grade;
     }
+    // not going to alter students name or ID
+    /** used to update the students grade
+     * @param grade new grade of the student
+     */
+    public void  setGrade(int grade) {
+        this.grade = grade;
+    }
+
+    /** add the fee to the fees paid
+     * @param fees the fees that the student pays
+     */
+    public void feesPaid(int fees){
+    feesPaid += fees;
+    }
+
+
 }
