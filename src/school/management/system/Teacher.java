@@ -29,14 +29,30 @@ public class Teacher {
         return id;
     }
 
+    /**
+     *
+     * @return NAME of the current teacher
+     */
 
     public String getName() {
         return name;
     }
 
+    /**
+     *
+     * @return salary of the  teacher
+     */
+
     public int getSalary(){
         return salary;
     }
 
+    /**
+     * set the salary
+     * @param salary
+     */
+        public void setSalary(int salary) {
+            this.salary = salary;
+        }
 
 }
