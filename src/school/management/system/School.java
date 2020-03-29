@@ -52,12 +52,33 @@ public class School {
         students.add(student);
     }
 
-
+    /**
+     * @return the total mmoney earned by the school
+     */
     public int getTotalMoneyEarned() {
         return totalMoneyEarned;
     }
 
+    /** adds the total money earned by the school
+     * @param MoneyEarned money thats supposed to be added
+     */
+    public void updateTotalMoneyEarned(int MoneyEarned) {
+        totalMoneyEarned += MoneyEarned;
+    }
+
+    /**
+     * @return the total money spent by the school
+     */
     public int getTotalMoneySpent() {
         return totalMoneySpent;
+    }
+
+
+    /** update money that is spent by the school.
+     * salary given by school to its teachers
+     * @param MoneySpent the money spent by school
+     */
+    public void updateTotalMoneySpent(int moneySpent) {
+        totalMoneyEarned -= moneySpent;
     }
 }
