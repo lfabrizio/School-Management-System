@@ -32,6 +32,10 @@ public class Main {
 
     roman.payFees(5000);
     System.out.println("shs has earned $"+ shs.getTotalMoneyEarned());
+    roman.payFees(6000);
+    System.out.println("shs has earned $" + shs.getTotalMoneyEarned());
+
+		System.out.println(" ----making shs salary----");
 
     }
 }
