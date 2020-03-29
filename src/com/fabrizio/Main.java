@@ -29,6 +29,9 @@ public class Main {
 	studentList.add(becky);
 
 	School shs = new School(teacherList, studentList);
-        System.out.println("SHS has earned " + shs.getTotalMoneyEarned());
+
+    roman.payFees(5000);
+    System.out.println("shs has earned $"+ shs.getTotalMoneyEarned());
+
     }
 }
