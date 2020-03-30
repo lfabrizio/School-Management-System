@@ -30,6 +30,10 @@ public class Main {
 
 	School shs = new School(teacherList, studentList);
 
+	Teacher kofi = new Teacher(6, "kofi", 900);
+
+	shs.addTeacher(kofi);
+
     roman.payFees(5000);
     System.out.println("shs has earned $"+ shs.getTotalMoneyEarned());
     roman.payFees(6000);
@@ -41,5 +45,7 @@ public class Main {
 
 		randy.receiveSalary(randy.getSalary());
 		System.out.println("shs has spent for salary to "+ randy.getName()+" and now has $" + shs.getTotalMoneyEarned());
+
+		System.out.println(randy);
     }
 }

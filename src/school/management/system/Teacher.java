@@ -66,4 +66,11 @@ public class Teacher {
         salaryEarned+=salary;
         School.updateTotalMoneySpent(salary);
         }
+
+        @Override
+    public String toString() {
+            return "name of thr teacher: "+ name
+                    +"Total salary earned so far $"
+                    +salaryEarned;
+        }
 }
